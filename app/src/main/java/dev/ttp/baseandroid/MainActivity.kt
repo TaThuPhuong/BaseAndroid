@@ -1,11 +1,14 @@
 package dev.ttp.baseandroid
 
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
+import dev.ttp.baseandroid.base.BaseActivity
+import dev.ttp.baseandroid.databinding.ActivityMainBinding
 
-class MainActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+class MainActivity : BaseActivity<ActivityMainBinding>(ActivityMainBinding::inflate) {
+    override fun setupData() {
+
     }
+
+    override fun setupObserver() {
+    }
+
 }
